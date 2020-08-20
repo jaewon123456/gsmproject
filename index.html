@@ -1,15 +1,53 @@
-﻿<idoctype html>
+<idoctype html>
 <html>
 <head>
-<title>WEB</title>
-<meta charset="utf-8" />
+    <title>WEB</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            border-bottom: 5px solid red;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        li{
+            margin-top:20px;
+        }
+        ol {
+            border-right: 5px solid red;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #contain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 5px solid red;
+        }
+        #web{
+            margin-bottom:20px;
+            margin-top:20px;
+            margin-left:150px;
+        }
+    </style>
 </head>
-<body>
-    <h1><a href="index.html">WEB</a></h1>
-<li><a href="html.html">html</a></li>
-<li><a href="css.html">css</a></li>
-<li><a href="javascript.html">javascript</a></li>
-</ol>
+<body id="bodytag">
+    <h1><a href="index.html">WEB!</a></h1>
+    <div id="contain">
+        <ol>
+            <li><a href="html.html">html</a></li>
+            <li><a href="css.html">css</a></li>
+            <li><a href="javascript.html">javascript</a></li>
+        </ol>
+        <div id="web">
+            WEB is world Wide WEB.
+        </div>
+    </div>
 </body>
+<input type="button" value="day" onclick="document.querySelector('#bodytag').style.backgroundColor='white'
+document.querySelector('#bodytag').style.color='black'">
+<input type="button" value="night" onclick="document.querySelector('#bodytag').style.backgroundColor='black'
+document.querySelector('#bodytag').style.color='white'">
 </html>
 </idoctype>
